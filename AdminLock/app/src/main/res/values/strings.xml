@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AdminLock</string>
+    <string name="app_description">You should allow my application to lock the screen</string>
+
+    <string-array name="difficulty">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Difficult</item>
+    </string-array>
+
+</resources>

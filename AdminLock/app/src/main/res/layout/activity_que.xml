@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QueActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#e9e9e9"
+        android:id="@+id/container1"
+        android:padding="12dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/que1"
+            android:hint="Question 1"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Answer 1"
+            android:layout_width="match_parent"
+            android:id="@+id/ans1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#e9e9e9"
+        android:layout_margin="10dp"
+        android:layout_below="@id/container1"
+        android:id="@+id/container2"
+        android:padding="12dp"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/que2"
+            android:hint="Question 2"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Answer 2"
+            android:layout_width="match_parent"
+            android:id="@+id/ans2"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#e9e9e9"
+        android:layout_margin="10dp"
+        android:layout_below="@id/container2"
+        android:id="@+id/container3"
+        android:padding="12dp"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/que3"
+            android:hint="Question 3"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Answer 3"
+            android:layout_width="match_parent"
+            android:id="@+id/ans3"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#e9e9e9"
+        android:layout_margin="10dp"
+        android:layout_below="@id/container3"
+        android:id="@+id/container4"
+        android:padding="12dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/que4"
+            android:hint="Question 4"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Answer 4"
+            android:layout_width="match_parent"
+            android:id="@+id/ans4"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container4">
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/submitBtn"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            />
+    </LinearLayout>
+</RelativeLayout>

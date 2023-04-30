@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Settings"
+        android:textSize="30sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:id="@+id/relset"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lvltxt"
+            android:layout_alignParentLeft="true"
+            android:labelFor="@+id/lvled"
+            android:textSize="20sp"
+            android:text="Level of questions : "/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:hint="  question level"
+            android:id="@id/lvled"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/lvltxt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/quetxt"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lvltxt"
+            android:labelFor="@+id/queed"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="No of questions : "/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:hint="  question nos"
+            android:id="@id/queed"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/lvled"
+            android:layout_toRightOf="@+id/quetxt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timtxt"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/quetxt"
+            android:labelFor="@+id/timed"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="Time before lock : "/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:id="@+id/timed"
+            android:hint="  in mins"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/queed"
+            android:layout_toRightOf="@+id/timtxt"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relset"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/updatebtn"
+            android:layout_height="wrap_content"
+            android:text="Update"/>
+    </LinearLayout>
+
+</RelativeLayout>
